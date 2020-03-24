@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+</head>
+
+<body>
+  <form action="formprocessor.php" method="post">
+
+    <fieldset>
+      <legend>Please fill in your Contact Details</legend>
+      <p><label for="first_name">First Name</label> <input required type="text" name="first_name"
+          placeholder="Enter Your First Name" /> </p>
+      <p><label for="last_name"></label>Last Name</label> <input required type="text" name="last_name"
+          placeholder="Enter Your Last Name" /> </p>
+      <p><label for="phone_number">Phone Number</label> <input type="tel" name="phone_number"
+          placeholder="+234-XXXXXXXXXX">
+      </p>
+      <p><label for="email">Email</label> <input required type="email" name="email" placeholder="Enter Your Email" />
+      </p>
+      <p><label for="age_range">Age Range</label> <select required name="age_range">
+          <option value="---">Select</option>
+          <option value="13-19">Teenage (13-19)</option>
+          <option value="20-35">Young Adult (20-35)</option>
+          <option value="36-59">Adult (36-59)</option>
+          <option value="60+">Senior Citizen (60+)</option>
+        </select>
+      </p>
+      <p>
+        <label for="gender">Gender</label> <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female">Female
+      </p>
+      <p>
+        <label for="address">Address</label>
+        <textarea name="address" placeholder="Enter your address" cols="20" rows="2"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Submit Form">
+      </p>
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
