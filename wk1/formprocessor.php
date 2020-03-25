@@ -26,8 +26,7 @@ if (isset($_POST['submit'])) {
     fwrite($openFile, "Gender: " . $gender . "\n");
     fwrite($openFile, "Address: " . $address . "\n");
 
-    print("<h1>Your Contact Information</h1>
-      <p>Your contact information has been saved in the file:" . $fname . "_" . $lname . ".txt</p>");
+    print("<h3>Your contact information has been saved in the file:" . $fname . "_" . $lname . ".txt</h3>");
     print("<p>The contents of that file are displayed below</p>");
     $openFile = fopen($file, "r");
 
